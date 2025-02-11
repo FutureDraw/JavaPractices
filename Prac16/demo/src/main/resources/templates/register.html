@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Register</title></head>
+<body><h1>Registration</h1>
+    <div th:if="${error}" style="color: red;">[[${error}]]</div><form action="#" th:action="@{/register}" method="post"><label>Username: <input type="text" name="username" /></label><br/><label>Password: <input type="password" name="password" /></label><br/><input type="submit" value="Register" /></form></body></html>
